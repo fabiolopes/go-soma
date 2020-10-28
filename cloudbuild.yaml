@@ -3,7 +3,4 @@ steps:
   name: "gcr.io/cloud-builders/go" 
   args: ["test", "soma"] 
   env: ["GOPATH =."]
-
-
-images:
-- 'gcr.io/$PROJECT_ID/go-soma:latest'
+- name: 'gcr.io/$PROJECT_ID/go-soma'
